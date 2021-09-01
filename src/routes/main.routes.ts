@@ -6,12 +6,6 @@ const router = Router();
 
 const viewPath = path.join(__dirname, "../../views/");
 
-router.get("/", (req, res) => {
-    res.render(viewPath + "index.ejs", {
-        title: "Hme",
-    });
-});
-
 router.post("/price", (req, res) => {
     const { priceValue } = req.body;
 
